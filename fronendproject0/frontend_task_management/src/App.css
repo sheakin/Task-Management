@@ -1,0 +1,89 @@
+/* Full-screen container */
+.app-container {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Background image styles */
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7; /* Add opacity for a slight overlay effect */
+}
+
+/* Centered welcome message container */
+.welcome-message-container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  text-align: center;
+}
+
+.welcome-message h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin: 15px 0;
+}
+
+.welcome-message .btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.welcome-message .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .welcome-message h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-message p {
+    font-size: 1.1rem;
+  }
+
+  .welcome-message .btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  /* Adjusting the position of the welcome message container for tablets */
+  .welcome-message-container {
+    top: 50%; /* Make the container a bit lower for tablets */
+  }
+}
+
+
